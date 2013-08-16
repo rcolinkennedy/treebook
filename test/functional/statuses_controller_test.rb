@@ -5,11 +5,12 @@ class StatusesControllerTest < ActionController::TestCase
     @status = statuses(:one)
   end
 
-#  test "should get index" do
-#    get :index
-#    assert_response :success
-#    assert_not_nil assigns(:statuses)
-#  end
+#test below was broken and commented out
+  test "should get index" do
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:statuses)
+  end
 
   test "should be redirected when not logged in" do
     get :new
@@ -38,12 +39,13 @@ class StatusesControllerTest < ActionController::TestCase
 
     assert_redirected_to status_path(assigns(:status))
   end
+#test below was broken and commented out
+  test "should show status" do
+    get :show, id: @status
+    assert_response :success
+  end
 
-#  test "should show status" do
-#    get :show, id: @status
-#    assert_response :success
-#  end
-
+#test below was broken and commented out, still fails <302>, but no longer Nil error
 #  test "should get edit" do
 #    get :edit, id: @status
 #    assert_response :success
@@ -61,6 +63,7 @@ class StatusesControllerTest < ActionController::TestCase
     assert_redirected_to new_user_session_path
   end
 
+#test below was broken and commented out, still broken id=>nil
 #  test "should update status" do
 #    put :update, id: @status, status: { content: @status.content }
 #    assert_redirected_to status_path(assigns(:status))

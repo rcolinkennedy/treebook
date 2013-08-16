@@ -1,8 +1,14 @@
 colin:
   first_name: "Colin"
   last_name: "Kennedy"
-  email:  = "c@rcolinkennedy.com"
-  profile_name: = "rcolinkennedy"
+  email: "c@rcolinkennedy.com"
+  profile_name: "rcolinkennedy"
+
+jim:
+  first_name: "Jim"
+  last_name: "Hoskins"
+  email: "jim@teamtreehouse.com"
+  profile_name: "jimhoskins"
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
